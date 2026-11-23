@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>萱萱爱上学 · 校园跑酷</title>
+<link rel="stylesheet" href="game.css">
+<script src="game.js" defer></script>
+</head>
+<body>
+<main class="cabinet">
+  <header><div><p class="subtitle">课间跑酷</p><h1>萱萱爱上学</h1></div><button id="pause" type="button" disabled>暂停</button></header>
+  <div class="hud">
+    <div class="health"><span>学习热情</span><meter id="health" min="0" max="100" value="100" aria-label="学习热情"></meter><strong id="hp">100</strong></div>
+    <div class="score">分数 <strong id="score">0000</strong></div>
+  </div>
+  <div class="stage">
+    <canvas width="960" height="460" id="game" aria-label="萱萱在校园里奔跑的游戏画面"></canvas>
+    <section class="overlay" id="overlay">
+      <div class="card">
+        <h2 id="headline">上学路上，小心头顶！</h2>
+        <p id="description">躲开课本和试卷，接住奶茶和蛋糕回血。</p>
+        <button id="start" type="button">开始跑酷</button>
+      </div>
+    </section>
+  </div>
+  <footer aria-label="游戏操作">
+    <div class="tips">
+      <span class="desktop-tip">← → 左右移动 · Esc 暂停</span>
+      <span class="touch-tip">在游戏画面上用手指左右滑动</span>
+      <span>投掷前，地面会标出落点</span>
+    </div>
+  </footer>
+</main>
+</body>
+</html>
